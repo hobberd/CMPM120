@@ -1,58 +1,184 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Ship Infiltration",
+    "Credits": "Written by Owen Connor (olconnor@ucsc.edu)",
+    "InitialLocation": "Start Screen",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Start Screen": {
+            "Body": "Under the cover of darkness, you slink out of the ocean and quietly climb up the anchor chain of the military ship. You are a spy, and your mission is to find information on the enemy's next planned attack on your country in order to prevent it before it happens. For this to work, however, the enemy cannot find out about your presence on their boat.<br><br>You climb over the railing of the ship's deck and, still dripping wet, quickly take off your rebreather, unzip your wetsuit, and throw them into a nearby crate. You duck down behind the crate. You're armed with nothing but a few coins and the sneaking suit on the back. <br><br>In front of you there is a door on the other side of the deck of the boat, but there's a searchlight scanning the deck. It might be possible to get across if you time your crossing correctly though. On your left there is another door, but you can hear muffled voices behind it. <br><br>How do you wish to proceed?",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Take the door to the left",
+                    "Target": "Take the door to the left"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Cross the deck",
+                    "Target": "Cross the deck"
+                },
+                {    
+                    "Text": "Jump into the water",
+                    "Target": "Jump into the water"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Take the door to the left": {
+            "Body": "You sneak up to the door and open it quietly, shutting it behind you.<br><br>Worried about the voices you heard, you quickly look for a place to hide, entering the room directly to your right. You sneak in just to see two guards playing cards at a table.<br>You look at them, and they look at you. <br><br>\"Uhhh... deal me in?\" Your voice cracks.<br><br>The guard shakes his head at you. \"Surely you've got something better than that.\"<br><br>[You failed!]",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Back",
+                    "Target": "Start Screen"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Cross the deck": {
+            "Body": "Alright. You have to time this correctly or you'll get spotted. The spotlight swings back and forth across the deck every few seconds, and is on the side of the deck opposite from you right now. If you're fast, you might make it!<br><br>Go for it?",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "It's now or never",
+                    "Target": "It's now or never"
                 },
-                {
-                    "Text": "South",
-                    "Target": "Beyond"
+                {    
+                    "Text": "Nah, I'll wait",
+                    "Target": "Nah, I'll wait"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Jump into the water": {
+            "Body": "You dive off the railing of the ship and sploosh into the water.<br><br>Your muscles cramp up from the freezing water and you drown.<br><br>Wh... why?<br><br>[You failed!]",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Start Screen"
+                }
+            ]
+        },
+        "It's now or never": {
+            "Body": "You take off and start running for the door. Just as you start running though, the light swings back and you are caught right in the center of the deck.<br><br>HEY! A voice echoes out from behind the spotlight.<br><br>The alarm rings out throughout the boat.<br><br>[You failed!]",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Cross the deck"
+                }
+            ]
+        },
+        "Nah, I'll wait": {
+            "Body": "The light swings over to your side of the deck and stops. Just as it starts moving back over, you vault over your cover and creep just behind the light as it crosses the deck. It then stops as it reaches the end of the deck, still inbetween you and the door.<br><br>You're a bit closer to the spotlight now though, and you are able to glimpse the guard controlling the light from the upper deck. You might be able to distract him.<br><br>There's another crate closeby, sizeably big. The scent of fish scent wafts from it.<br><br>What do you do?",
+            "Choices": [
+                {
+                    "Text": "Distract the guard",
+                    "Target": "Distract the guard"
+                },
+                {
+                    "Text": "Hop in the crate",
+                    "Target": "Hop in the crate"
+                }
+            ]
+        },
+        "Distract the guard": {
+            "Body": "You take a coin from your pocket and chuck it at the guard as hard as you can. <br><br>OW! You see the guard cover his eye and avert his attention from the spotlight.<br><br>Bullseye! You dash across the spotlight, pull the door open and close it behind you. In front of you lies a hallway of rooms, two to your immediate left and right, and two more rooms a little farther down. At the end of the hallway is another door. <br><br>The room to your left is dark and you hear snoring from within. The room on your right has the lights on, but it seems silent. <br><br>The two rooms farther down both have the lights on, but you can't really gather anymore info from here.<br><br>As you're deciding where to go, you see the door at the end of the hallway begin to open. <br><br>Quick! Choose a room!",
+            "Choices": [
+                {
+                    "Text": "Left room",
+                    "Target": "Left room"
+                },
+                {
+                    "Text": "Right room",
+                    "Target": "Right room"
+                }
+            ]
+        },
+        "Hop in the crate": {
+            "Body": "You open the top of the crate, and the smell of fish blasts you in the face. The crate is stacked to the brim with freshly caught fish, with no space for you. Just as you turn back to run, the spotlight surrounds you. <br><br>HEY! A voice echoes out from behind the spotlight.<br><br>The alarm rings out throughout the boat.<br><br>[You failed!]",           
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Nah, I'll wait"
+                }
+            ]
+        },
+        "Left room": {
+            "Body": "You slink into the room quietly, and there are people soundly asleep on bunk beds.<br><br>You wait behind the doorframe and see the the guard enter the hallway and enter the left farther room.<br><br>You search the room for any significant documents, but you don't find anything except medical supplies and some magazines.<br><br>Stepping back into the hallway, you can choose to go into the room opposite of yours, or one of the farther rooms.<br><br>What will you do?",
+            "Choices": [
+                {
+                    "Text": "Opposite room",
+                    "Target": "Opposite room"
+                },
+                {
+                    "Text": "Far left room",
+                    "Target": "Far left room"
+                },
+                {
+                    "Text": "Far right room",
+                    "Target": "Far right room"
+                }
+                
+            ]
+        },
+        "Right room": {
+            "Body": "You dash into the right room, and you see that the room is lined with cages. Dog cages. The dogs notice an unfamiliar scent and start barking rabidly at you.<br><br>You slowly back out of the room just as the guard rushes into the room and spots you.<br><br>Who're you?! The guard yells.<br><br>[You failed!]",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Distract the guard"
+                }
+            ]
+        },
+        "Opposite room": {
+            "Body": "You dash into the opposite room, and you see that the room is lined with cages. Dog cages. The dogs notice an unfamiliar scent and start barking rabidly at you.<br><br>You slowly back out of the room just as the guard rushes into the room and spots you.<br><br>Who're you?! The guard yells.<br><br>[You failed!]",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Left room"
+                }
+            ]
+        },
+        "Far left room": {
+            "Body": "You sneak into the far left room, and the guard from earlier is sat down at a desk facing away from you. You sneak up a little and take a peak from behind him, and see that the papers he's handling are documents on an upcoming attack targetting your country! This is exactly what you're looking for.<br><br>The problem remaining, however, is: How to get it?",
+            "Choices": [
+                {
+                    "Text": "Knock him out in one swift blow",
+                    "Target": "Punch"
+                },
+                {
+                    "Text": "Check the other room for something useful",
+                    "Target": "Far right room"
+                }
+            ]
+        },
+        "Far right room": {
+            "Body": "You enter the far right room and look at your surroundings. No one inside. It seems to be some sort of infimary, as there are cabinets with medical supplies and equipment for operating surgery.<br><br>As you search around, a box on a tabletop catches your eye. \"SLEEPING DRUG (EXPERIMENTAL!),\" the label reads. You open up the box, and inside there's a little syringe with a fluid inside it.<br><br>You take it and put it in your pocket.<br><br>That seems to be everything for here. Now what?",
+            "Choices": [
+                {
+                    "Text": "Head into the room with the guard",
+                    "Target": "Far left room"
+                },
+                {
+                    "Text": "Head to the room across from the dark room",
+                    "Target": "Opposite room 2"
+                }
+                
+            ]
+        },
+        "Opposite room 2": {
+            "Body": "You dash into the opposite room, and you see that the room is lined with cages. Dog cages. The dogs notice an unfamiliar scent and start barking rabidly at you.<br><br>You slowly back out of the room just as the guard rushes into the room and spots you.<br><br>Who're you?! The guard yells.<br><br>[You failed!]",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Far right room"
+                }
+            ]
+        },
+        "Punch": {
+            "Body": "You breath in and gather all your strength into your arm. You wind up your arm like Popeye and prepare for your strongest punch of all time. You leap up like you're about to spike a volleyball, but instead of spiking you're punching and instead of a volleyball its this poor guard's head. You bring your fist down on the back of his head with all your might, your strength, your will.<br><br>[POW!]<br><br>Your fist connects, but you don't feel his head move at all. The only thing you feel is pain. So much pain. In your arm. It feels like you just punched a wall.<br><br>The guard scratches the back of his head like he just got bit by a mosquito. He turns around, sees you, grins, and then stands up from the desk, cracking his knuckles. You then realize that this guard has muscles rippling up and down his body like he's Arnold Schwarzenegger. You know what, that actually might be Arnold Schwarzenegger. I'm not sure. Either way though, you're pretty screwed.<br><br>[You failed!]",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Far left room"
+                }
+            ]
+        },
+        "Drug": {
+            "Body": "You jab the syringe into the back of the guard's neck and inject the fluid. Before he can react, he topples out of his chair and onto the floor.<br><br>Congrats! You got the documents! Now just to retrace your steps and you can get out of here!<br><br>[You finished the game!]"
         }
+
     }
 }

@@ -45,9 +45,11 @@ class Engine {
     }
 
     show(msg) {
-        let div = document.createElement("div");
+        let div = document.createElement("div");;
         div.innerHTML = msg;
-        this.output.appendChild(div);
+        this.output.appendChild(div);   
+        
+    
     }
 }
 

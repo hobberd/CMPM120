@@ -1,0 +1,67 @@
+{
+    "Title": "Sides of Singapore",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu). Edited by Owen Connor",
+    "InitialLocation": "Downtown",
+    "Locations": {
+        "Downtown": {
+            "Body": "This is the Downtown area, where Orchard Road, the Singapore Flyer, and the Merlion reside. ",
+            "Choices": [
+                {
+                    "Text": "Take the MRT left",
+                    "Target": "Jurong"
+                },
+                {    
+                    "Text": "Take the MRT right",
+                    "Target": ""
+                }
+            ]
+        },
+        "Jurong": {
+            "Body": "This is Jurong, where there are a whole lot of parks, including the bird park.",
+            "Choices": [
+                {
+                    "Text": "Take the MRT left",
+                    "Target": "Woodlands"
+                },
+                {
+                    "Text": "Take the MRT right",
+                    "Target": "Downtown"
+                }
+                
+            ]
+        },
+        "Woodlands": {
+            "Body": "This is Woodlands, where you can see Malaysia, explore mangroves, or go to Singapore American School.",
+            "Choices": [
+                {
+                    "Text": "Take the MRT left",
+                    "Target": "Changi"
+                },
+                {
+                    "Text": "Take the MRT right",
+                    "Target": "Jurong"
+                }
+            ]
+        },
+        "Changi": {
+            "Body": "This is Changi, where Changi Airport, Singapore's airport and home to Singapore's famous Changi Jewel, resides.",
+            "Choices": [
+                {
+                    "Text": "Take the MRT left",
+                    "Target": "Downtown"
+                },
+                {
+                    "Text": "Take the MRT right",
+                    "Target": "Woodlands"
+                },
+                {
+                    "Text": "Get on a plane",
+                    "Target": "Beyond"
+                }
+            ]
+        },
+        "Beyond": {
+            "Body": "oh ok bye"
+        }
+    }
+}
